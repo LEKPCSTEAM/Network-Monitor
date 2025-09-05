@@ -1,0 +1,19 @@
+[project]
+name = "network-monitor"
+version = "0.1.0"
+description = "A network monitoring tool with GUI built using PySide6."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cairosvg>=2.8.2",
+    "cssselect2>=0.8.0",
+    "lxml>=6.0.1",
+    "matplotlib>=3.10.6",
+    "netifaces>=0.11.0",
+    "pandas>=2.3.2",
+    "pyinstaller>=6.15.0",
+    "pyside6>=6.9.2",
+    "reportlab>=4.4.3",
+    "svglib>=1.5.1",
+    "tinycss2>=1.4.0",
+]
