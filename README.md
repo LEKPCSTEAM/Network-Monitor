@@ -29,7 +29,7 @@ source .venv/bin/activate   # macOS/Linux
 ### 3. Install dependencies
 
 ```bash
-uv pip install -r requirements.txt
+uv sync
 ```
 
 (or add manually: `uv add PySide6 pandas matplotlib reportlab netifaces`)
@@ -82,7 +82,12 @@ Reports include:
 
 ## Build Executable (optional)
 
+
+```bash
+uv run pyinstaller Network-Monitor.spec
+```
+or
 ```bash
 uv add pyinstaller
-uv run pyinstaller --onefile --windowed main.py
+uv run pyinstaller --onefile --windowed --icon=icon.ico --name Network-Monitor main.py
 ```
